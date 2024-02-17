@@ -13,7 +13,7 @@ const server = http.createServer(async (req, res) => {
     res.end(/*console.log("test")*/);
   } catch (err) {
     console.log(err);
-    res.writeHead(400, { "Content-Type": "text/html" });
+    res.writeHead(404, { "Content-Type": "text/html" });
     const data = await fs.readFile("./404.html");
     res.write(data);
     res.end();
