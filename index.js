@@ -41,3 +41,29 @@ http
   })
   .listen(8080); // server object listens on port 8080
 */
+
+/*
+
+const { MongoClient } = require("mongoDB");
+
+User;
+const { MongoClient } = require("mongoDB");
+
+async function run() {
+  try {
+    const client = new MongoClient("string_connect", {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    await client.connect();
+    const db = client.db("Base_Données");
+
+    const result = await db
+      .collection("products")
+      .insertOne({ item: "lol", price: 2 });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+run()*/
